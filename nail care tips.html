@@ -3,36 +3,165 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Twinkle Tips - Gallery</title>
+        <title>Tebo's Nail Heaven - Nail Care Tips</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1>Gallery</h1>
+            
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about us.html">Services</a></li>
+                    <li><a href="about us.html">About Us</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="FAQ.html">FAQ</a></li>
                     <li><a href="booking.html">Book Now</a></li>
-                    <li><a href="meet the nail tech.html">Meet the Nail Tech</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="nail care tips.html">Nail Care Tips</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="special offers.html">Special Offers</a></li>
-
             
                 </ul>
             </nav>
         </header>
 
         <main>
-            <!-- Gallery content goes here -->
-            <section class="gallery">
-                <h2>Our Work</h2>
-                <!-- Example gallery items -->
-                <div class="gallery-item">
-                    <img src="images/nail1.jpg" alt="Nail Design 1">
-                    
+            <section class="tips-banner">
+
+    <h1>Nailcare Tips</h1>
+
+    <p>
+        Learn how to keep your nails healthy,
+        strong and beautiful.
+    </p>
+
+</section>
+<section class="tips-section">
+
+    <!-- TIP 1 -->
+
+    <div class="tip-box">
+
+        <img src="images/cuticle oil.jpeg" alt="Cuticle Oil">
+
+        <div class="tip-text">
+
+            <h2>Moisturize Your Cuticles</h2>
+
+            <p>
+                Apply cuticle oil daily to keep your nails
+                hydrated and healthy.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- TIP 2 -->
+
+    <div class="tip-box">
+
+        <img src="images/nails as tool.jpeg" alt="Avoid Using Nails As Tools">
+
+        <div class="tip-text">
+
+            <h2>Avoid Using Nails As Tools</h2>
+
+            <p>
+                Avoid opening cans or scratching hard
+                surfaces with your nails to prevent breakage.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- TIP 3 -->
+
+    <div class="tip-box">
+
+        <img src="images/gloves.jpeg" alt="Wear Gloves When Cleaning">
+
+        <div class="tip-text">
+
+            <h2>Wear Gloves When Cleaning</h2>
+
+            <p>
+                Cleaning chemicals can damage your nails
+                and weaken nail polish.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="extra-tips">
+
+    <h2>More Nailcare Advice</h2>
+
+    <div class="extra-container">
+
+        <div class="extra-card">
+
+            <h3>Stay Hydrated</h3>
+
+            <p>
+                Drinking water helps maintain healthy nails.
+            </p>
+
+        </div>
+
+        <div class="extra-card">
+
+            <h3>Book Refills Regularly</h3>
+
+            <p>
+                Regular maintenance keeps acrylics fresh.
+            </p>
+
+        </div>
+
+        <div class="extra-card">
+
+            <h3>Do Not Peel Off Nails</h3>
+
+            <p>
+                Peeling acrylics damages natural nails.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="tips-booking">
+
+    <h2>Ready For Beautiful Nails?</h2>
+
+    <p>
+        Book your appointment today for professional nail care.
+    </p>
+
+    <a href="booking.html" class="btn">
+        Book Appointment
+    </a>
+
+</section>
+
+
+        </main>
+
+<script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
+
+</script>
+    </body>
+    <footer>
+        <p>&copy; 2025 Tebo's Nail Heaven. All rights reserved.</p>
+    </html>

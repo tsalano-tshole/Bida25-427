@@ -3,70 +3,121 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GLAM Nails - Contact</title>
+        <title>Tebo's Nail Heaven - Contact Us</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1>Contact Us</h1>
+    
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about us.html">Services</a></li>
+                    <li><a href="about us.html">About Us</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="FAQ.html">FAQ</a></li>
                     <li><a href="booking.html">Book Now</a></li>
-                    <li><a href="meet the nail tech.html">Meet the Nail Tech</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="nail care tips.html">Nail Care Tips</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="special offers.html">Special Offers</a></li>
 
             
                 </ul>
-            </nav>
+            </nav><section class="contact-banner">
+
+    <h1>Contact Us</h1>
+
+    <p>
+        We'd love to hear from you.
+    </p>
+
+</section>
+
         </header>
 
-        <main>
-            <section class="contact-info">
-                <h2>Get in Touch</h2>
-                <p>If you have any questions or would like to schedule an appointment, please contact us:</p>
-                <ul>
-                    <li>Email: tinytshole@gmail.com</li>
-                    <li>Phone: 267 754 595 45</li>
-                    <li>Address: plot 69643, Thobo Hamlet, Phakalane, Gaborone</li>
-                    </ul>
-                    </section>
-                    <section class="contact-form">
-                        <h2>Send Us a Message</h2>
-                        <form action="https://formspree.io/f/maqpeojr" method="POST">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
+        <section class="contact-section">
 
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+    <!-- CONTACT INFO -->
 
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+    <div class="contact-info">
 
-                            <button type="submit">Send Message</button>
-                            </form>
-                    </section>
-                    <section class="map">
-                        <h2>Our Location</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.1234567890123!2d25.1234567890123!3d-24.1234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x123456789012345%3A0x123456789012345!2sTwinkle%20Tips%20Salon!5e0!3m2!1sen!2sbg!4v1234567890123" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        
-                    </section>
-                    <section class="social-media">
-                        <h2>Follow Us</h2>
-                        <p>Connect with us on social media for the latest updates and promotions!</p>
-                        <ul>
-                            <li><a href="https://www.facebook.com/glamnails">Facebook</a>
-                                <li><a href="https://www.instagram.com/t005482?igsh=aTl2NWtwb21zNTR4agram">Instagram</a></li>
-                                <li><a href="https://www.tiktok.com/@tiny1016?_r=1&_t=ZS-94gNOic8N6N">TikTok</a>
-                                </li>
-                    </section>
-                </main>
-            </body>
-            </head>
+        <h2>Get In Touch</h2>
+
+        <p><strong>Phone:</strong> +267 77981109</p>
+
+        <p><strong>Email:</strong> tinytshole@gmail.com</p>
+
+        <p><strong>Location:</strong> Tlokweng, Botswana</p>
+
+        <p><strong>Opening Hours:</strong></p>
+
+        <p>Monday - Saturday: 8AM - 6PM</p>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact-form">
+
+        <h2>Send A Message</h2>
+
+        <form action="https://formspree.io/f/xnjrjpvy" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
+
+            <input type="email" name="email" placeholder="Your Email" required><br><br>
+
+            <textarea name="message" placeholder="Your Message" required></textarea><br>><br>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<section class="social-section">
+
+    <h2>Follow Us</h2>
+
+    <div class="social-links">
+
+        <a href="https://www.instagram.com/tebos.nail.heaven?igsh=MXRoY2xiM25tamdwNQ==">
+            Instagram
+        </a>
+
+        <a href="https://www.facebook.com/share/1DzefUhgNt/?mibextid=wwXIfr">
+            Facebook
+        </a>
+
+        <a href="https://www.tiktok.com/@tebos.nail.heaven?_r=1&_t=ZS-96UthztjfNt">
+            TikTok
+        </a>
+
+    </div>
+
+</section>
+<section class="map-section">
+
+    <iframe
+        src="https://www.google.com/maps"
+        width="100%"
+        height="300">
+    </iframe>
+
+</section>
+    </body>
+    <footer>
+        <p>&copy; 2025 Tebo's Nail Heaven. All rights reserved.</p>
+        </footer>
+        <script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
+
+</script>

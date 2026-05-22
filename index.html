@@ -3,27 +3,372 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Twinkle Tips</title>
-        <link rel="stylesheet" href="styles.css">
-        <head>
+        <title>Tebo's Nail Heaven - Book Now</title>
+        <style>
+        body{
+    margin:0;
+    font-family:Arial;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:pink;
+    padding:15px 40px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+/* HERO */
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  gap: 50px;
+  background: linear-gradient(135deg, #fff5f8, #ffeef3);
+  min-height: 90vh;
+  font-family: Arial, sans-serif;
+}
+
+/* IMAGE (LEFT) */
+.hero-image {
+  flex: 1;
+  animation: slideLeft 1s ease-in-out;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+}
+
+/* TEXT (RIGHT) */
+.hero-text {
+  flex: 1;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #2b2b2b;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* BOOK NOW BUTTON */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #d81b60;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(216, 27, 96, 0.3);
+}
+
+.btn:hover {
+  background: #ad1457;
+  transform: translateY(-3px);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+}
+
+/* SERVICES */
+
+.services-preview{
+    padding:50px;
+    text-align:center;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.service-card{
+    width:300px;
+}
+
+.service-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+/* ABOUT */
+
+.about-preview{
+    display:flex;
+    align-items:center;
+    padding:50px;
+    gap:40px;
+}
+
+.about-image img{
+    width:400px;
+}
+
+/* GALLERY */
+
+.gallery-preview{
+    padding:50px;
+    text-align:center;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+/* REVIEWS */
+
+.reviews{
+    background:#f4f4f4;
+    padding:50px;
+    text-align:center;
+}
+
+.review-box{
+    margin-bottom:30px;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+        </style>
+    </head>
     <body>
         <header>
-            <h1>Twinkle Tips</h1>
+           
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about us.html">Services</a></li>
+                    <li><a href="about us.html">About Us</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="booking.html">Book Now</a></li>
-                    <li><a href="meet the nail tech.html">Meet the Nail Tech</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="booking.html">Booking</a></li>
                     <li><a href="nail care tips.html">Nail Care Tips</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="special offers.html">Special Offers</a></li>
-
-            
                 </ul>
             </nav>
-        </header>
+            </header>
+        <main>
+            <section class="hero">
+  <div class="hero-image">
+    <img src="images/Logo.jpeg" alt="Nail businesslogo">
+  </div>
+
+  <div class="hero-text">
+    <h1>Beautiful Nails, Every Time</h1>
+    <p>Book your appointment today and glow with confidence.</p>
+    <a href="booking.html" class="btn">Book Now</a>
+  </div>
+</section>
+
+    </div>
+
+</section>
+<section class="services-preview">
+
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+
+            <img src="images/acrylic.jpeg">
+
+            <h3>Acrylic Nails</h3>
+
+            <p>
+                Long-lasting stylish acrylic nail sets.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <img src="images/gel.jpeg">
+
+            <h3>Gel Polish</h3>
+
+            <p>
+                Smooth glossy finishes for elegant nails.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <img src="images/pedicure.jpeg">
+
+            <h3>Pedicure</h3>
+
+            <p>
+                Relaxing foot and nail treatment.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-preview">
+
+    <div class="about-text">
+
+        <h2>About Our Studio</h2>
+
+        <p>
+            We are passionate about creating elegant nail designs
+            that make every client feel confident and beautiful.
+        </p>
+
+        <a href="about.html" class="btn">
+            Learn More
+        </a>
+
+    </div>
+
+    <div class="about-image">
+
+        <img src="images/about us.jpeg">
+
+    </div>
+
+</section>
+<section class="gallery-preview">
+
+    <h2>Featured Designs</h2>
+
+    <div class="gallery-container">
+
+        <img src="images/design1.jpeg">
+
+        <img src="images/design2.jpeg">
+
+        <img src="images/design3.jpeg">
+
+        <img src="images/design4.jpeg">
+
+        
+    </div>
+
+</section>
+<section class="reviews">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review-box">
+
+        <p>
+            "Absolutely amazing service and beautiful nails!"
+        </p>
+
+        <h4>- Sarah</h4>
+
+    </div>
+
+    <div class="review-box">
+
+        <p>
+            "Best nail salon experience I've ever had."
+        </p>
+
+        <h4>- Amanda</h4>
+
+    </div>
+
+</section>
+<footer>
+    <p>&copy; 2025 Tebo's Nail Heaven. All rights reserved.</p>
+</main>
+</body>
+</html>

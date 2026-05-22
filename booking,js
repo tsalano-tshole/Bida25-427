@@ -1,0 +1,12 @@
+<script src="booking.js"></script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let service = document.getElementById("service").value;
+
+    document.getElementById("message").textContent =
+        "Thank you " + name + "! You booked: " + service + " 💅";
+
+    this.reset();
+});
